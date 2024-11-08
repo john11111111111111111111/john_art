@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الفن الشخصي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">فن <span>John Mosad</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عنّي</a></li>
+                <li><a href="#gallery">معرض الصور</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <h1>مرحبًا بك في معرض <span>رسوماتي</span></h1>
+        <p>اكتشف إبداعاتي وأعمالي الفنية هنا.</p>
+        <button class="cta-button" onclick="scrollToSection('about')">اكتشف المزيد</button>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>عنّي</h2>
+        <p>أنا فنان متخصص في الرسم ثلاثي الأبعاد وأعمل على خلق تجارب فنية فريدة.</p>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>معرض الصور</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="https://scontent.fcai20-6.fna.fbcdn.net/v/t39.30808-6/462193757_390672067429178_386381187114336417_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DZmzLMw5nyIQ7kNvgGwvUFZ&_nc_zt=23&_nc_ht=scontent.fcai20-6.fna&_nc_gid=A4mq-0BKuMSmgFX6uWR80MO&oh=00_AYBsA9YWYlb3wACUIlRainaV9pOHCjPB9laYKucRtvdokw&oe=673303C6" alt="صورة 1"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/462054996_389234337572951_3618555612168957935_n.jpg?stp=cp6_dst-jpg_s600x600&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=u6Gg1VfTPs4Q7kNvgGlgzAh&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=A9aOWP45EieAip4UVcZUsEM&oh=00_AYAtQzroeTSx4pmEAvvu_Z3WO-ngqOuSmocGYI-N0jp1kQ&oe=673302D2" alt="صورة 2"></div>
+            <div class="gallery-item"><img src="https://scontent.fcai20-3.fna.fbcdn.net/v/t39.30808-6/453300151_345614138601638_7817145439876213377_n.jpg?stp=cp6_dst-jpg_s960x960&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qvelwy_TMH0Q7kNvgEKi8C-&_nc_zt=23&_nc_ht=scontent.fcai20-3.fna&_nc_gid=Af-A15rKbHiCKNdb-7ci1eq&oh=00_AYAoD8LotKK-hiqqZNpjxnDdlfEdyKxqqLXdxD5azc7e9w&oe=673334B6" alt="صورة 3"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>تواصل معي</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="الاسم الكامل" required>
+            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+            <textarea id="message" placeholder="رسالتك" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 John Mosad - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
